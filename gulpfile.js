@@ -18,12 +18,17 @@ var options = {
   }
 };
 
+//require(/gulp/*.js files) with options{} above
 wrench.readdirSyncRecursive('./gulp').filter(function(file) {
   return (/\.(js|coffee)$/i).test(file);
 }).map(function(file) {
   require('./gulp/' + file)(options);
 });
 
-gulp.task('default', ['clean'], function () {
+gulp.task('watch', function() {
+	//TODO: watch .ts files and recompile onChange?
+});
+
+gulp.task('default', ['clean', 'watch'], function () {
     gulp.start('build');
 });
