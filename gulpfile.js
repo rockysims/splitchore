@@ -25,10 +25,6 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
   require('./gulp/' + file)(options);
 });
 
-gulp.task('watch', function() {
-	//TODO: watch .ts files and recompile onChange?
-});
-
 gulp.task('default', ['clean', 'watch'], function () {
     gulp.start('build');
 });
