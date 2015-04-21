@@ -6,7 +6,19 @@
 module splitchore {
 	'use strict';
 
-	angular.module('splitchore', ['firebase', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap'])
+	angular.module(
+		'splitchore',
+		[
+			'firebase',
+			'ngAnimate',
+			'ngCookies',
+			'ngTouch',
+			'ngSanitize',
+			'ngResource',
+			'ui.router',
+			'ui.bootstrap'
+		]
+	)
 		.controller('MainCtrl', MainCtrl)
 		.controller('NavbarCtrl', NavbarCtrl)
 
