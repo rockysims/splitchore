@@ -19,7 +19,7 @@ module splitchore {
 			'ui.bootstrap'
 		]
 	)
-		.controller('MainCtrl', MainCtrl)
+		.controller('MainCtrl', splitchore.MainCtrl)
 		.controller('NavbarCtrl', NavbarCtrl)
 
 	.config(function ($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
